@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>What Can JavaScript Do?</h2>
+
+<p>JavaScript can change HTML attributes.</p>
+
+<p>In this case JavaScript changes the src (source) attribute of an image.</p>
+<div id="sagar">sagar</div>
+<button onclick="onClick()">click here to change text</button>
+
+<script>
+	var counter = 0;
+function onClick() {
+	var nameArray = ['hello', 'Sagar'];
+	document.getElementById('sagar').innerHTML = nameArray[counter];
+	if(counter === 1)
+	{
+		counter = 0;
+	}
+	else {
+		counter ++;
+	}
+	
+}
+</script>
+</body>
+</html>
+
